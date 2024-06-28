@@ -1,0 +1,246 @@
+/* css reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* font */
+    --ff: "Overpass", sans-serif;
+    --fs: 15px;
+    --fw-4: 400;
+    --fw-7: 700;
+
+  /* colors */
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+    --card-background: radial-gradient(
+      circle at top,
+        hsl(213, 19%, 16%) 20%,
+        hsl(213, 15%, 12%)
+    );
+
+  /* widths */
+    --dw: 1440px;
+    --mw: 375px;
+}
+
+html {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: var(--ff);
+  font-size: var(--fs);
+  color: white;
+  width: var(--dw);
+  height: 800px;
+  background-color: var(--Very-Dark-Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Rating Card Start */
+  #rating-card {
+    position: absolute;
+    width: 413px;
+    height: 413px;
+    border-radius: 2em;
+    background: var(--card-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.15em;
+  }
+
+  .circle-star {
+    width: 3.2em;
+    height: 3.2em;
+    background-color: var(--Dark-Blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    margin-top: 0.3em;
+  }
+
+  #rating-p {
+    color: var(--Medium-Grey);
+    line-height: 1.6em;
+    margin-top: -10px;
+  }
+
+  .numbers {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .circle {
+    color: var(--Medium-Grey);
+    width: 3.4em;
+    height: 3.4em;
+    border-radius: 50%;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #submit {
+    font-size: 1em;
+    color: var(--White);
+    letter-spacing: 2px;
+    padding-block: 1em;
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 2em;
+  }
+
+  .circle:hover {
+    cursor: pointer;
+    color: var(--White);
+    background-color: var(--Orange);
+  }
+
+  #submit:hover {
+    cursor: pointer;
+    color: var(--Orange);
+    background-color: var(--White);
+  }
+
+  .circle.clicked {
+    background-color: var(--Light-Grey);
+    color: var(--White);
+  }
+/* Rating Card End */
+
+
+/* Thank You Card Start */
+  #thank-you-card {
+    position: absolute;
+    width: 413px;
+    height: 413px;
+    border-radius: 2em;
+    background: var(--card-background);
+    padding-block: 3em;
+    padding-inline: 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+  }
+
+  #result {
+    color: var(--Orange);
+    background-color: var(--Dark-Blue);
+    padding-inline: 1.2em;
+    padding-block: 0.5em;
+    border-radius: 20px;
+  }
+
+  #thank-you_ {
+    font-size: 2em;  
+  }
+
+  #thank-you-p {
+    color: var(--Light-Grey);
+    text-align: center;
+    margin-top: -1em;
+    line-height: 1.5em;
+  }
+
+  .index {
+    z-index: -1;
+  }
+/* Thank You Card End */
+
+
+.attribution {
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+}
+
+.attribution a {
+  color: var(--Orange);
+}
+
+
+/* media query */
+@media screen and (max-width: 416px) {
+  #rating-card {
+    width: 330px;
+    height: 355px;
+    border-radius: 1em;
+    padding: 1.5em;
+  }
+
+  .circle-star {
+    width: 2.8em;
+    height: 2.8em;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  #rating-p {
+    font-size: 14px;
+  }
+
+  .circle {
+    width: 2.8em;
+    height: 2.8em;
+  }
+
+  #submit {
+    font-size: 14px;
+  }
+
+  #thank-you-card {
+    width: 330px;
+    height: 355px;
+    border-radius: 1em;
+    padding: 2em;
+    gap: 1.7em;
+  }
+
+  #thank-you-pic {
+    width: 10em;
+  }
+
+  #result {
+    font-size: 14px;
+    padding-inline: 1em;
+  }
+
+  #thank-you_ {
+    font-size: 1.6em;
+  }
+
+  #thank-you-p {
+    font-size: 14px;
+  }
+
+
+  .index {
+    z-index: -1;
+  }
+}
