@@ -19,8 +19,8 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Neonnati/Interactive_rating_component)
+- Live Site URL: [Add live site URL here](https://neonnati.github.io/Interactive_rating_component/)
 
 ## My process
 
@@ -39,5 +39,4 @@ I learn about the <value> attribut, that only form elements will return a value,
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Neonnati](https://www.frontendmentor.io/profile/Neonnati)
