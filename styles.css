@@ -45,18 +45,18 @@ body {
   width: var(--dw);
   height: 800px;
   background-color: var(--Very-Dark-Blue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Rating Card Start */
   #rating-card {
-    position: absolute;
     width: 413px;
     height: 413px;
     border-radius: 2em;
     background: var(--card-background);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -134,11 +134,14 @@ body {
 
 /* Thank You Card Start */
   #thank-you-card {
-    position: absolute;
     width: 413px;
     height: 413px;
     border-radius: 2em;
     background: var(--card-background);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     padding-block: 3em;
     padding-inline: 2.5em;
     display: flex;
@@ -172,10 +175,12 @@ body {
 /* Thank You Card End */
 
 
-.attribution {
+footer {
   font-size: 12px;
   position: absolute;
   bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .attribution a {

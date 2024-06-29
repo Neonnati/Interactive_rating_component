@@ -3,70 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css">
-  
   <title>Frontend Mentor | Interactive rating component</title>
-
 </head>
+
 <body>
 
-  <!-- Rating state start -->
+  <main>
+    <!-- Rating state start -->
+      <article id="rating-card">
+        <div class="circle-star">
+          <img id="head-img" src="./images/icon-star.svg" alt="icon-star">
+        </div>
+        
+        <h1 role="heading">How did we do?</h1>
+    
+        <p id="rating-p">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
-    <article id="rating-card">
-      <div class="circle-star">
-        <img id="head-img" src="./images/icon-star.svg" alt="icon-star">
+        <div class="numbers">
+          <div id="1" data-value="1" class="circle">1</div>
+          <div id="2" data-value="2" class="circle">2</div>
+          <div id="3" data-value="3" class="circle">3</div>
+          <div id="4" data-value="4" class="circle">4</div>
+          <div id="5" data-value="5" class="circle">5</div>
+        </div>
+
+        <button type="submit" id="submit" name="submit">SUBMIT</button>
+
+      </article>
+    <!-- Rating state end -->
+
+
+    <!-- Thank you state start -->
+      <article id="thank-you-card" class="thank-you-card index">
+        <img id="thank-you-pic" class="index" src="./images/illustration-thank-you.svg" alt="message-received-icon">
+        <div id="result" class="index"></div>
+        <p id="thank-you_" class="index">Thank you!</p>
+        <p id="thank-you-p" class="index">We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+      </article>
+    <!-- Thank you state end -->
+  </main>
+
+  <footer>
+    <!-- Attribution start -->
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/Neonnati" target="_blank">Neon Nati</a>.
       </div>
-      
-      <h1>How did we do?</h1>
-
-      <p id="rating-p">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-
-      <div class="numbers">
-        <div id="1" data-value="1" class="circle">1</div>
-        <div id="2" data-value="2" class="circle">2</div>
-        <div id="3" data-value="3" class="circle">3</div>
-        <div id="4" data-value="4" class="circle">4</div>
-        <div id="5" data-value="5" class="circle">5</div>
-      </div>
-
-      <button type="submit" id="submit" name="submit">SUBMIT</button>
-
-    </article>
-
-  <!-- Rating state end -->
-
-
-
-  <!-- Thank you state start -->
-
-    <article id="thank-you-card" class="thank-you-card index">
-      <img id="thank-you-pic" class="index" src="./images/illustration-thank-you.svg" alt="message-received-icon">
-      <div id="result" class="index"></div>
-      <p id="thank-you_" class="index">Thank you!</p>
-      <p id="thank-you-p" class="index">We appreciate you taking the time to give a rating. If you ever need more support, 
-    don’t hesitate to get in touch!</p>
-    </article>
-
-  <!-- Thank you state end -->
-
-  
-  <!-- Attribution start -->
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/Neonnati" target="_blank">Neon Nati</a>.
-    </div>
-  <!-- Attribution end -->
+    <!-- Attribution end -->
+  </footer>
 
 
   <script src="./index.js"></script>
-
-  
+ 
 </body>
 </html>
